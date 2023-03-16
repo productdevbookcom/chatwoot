@@ -30,7 +30,10 @@ yarn add @productdevbook/chatwoot
 npm add @productdevbook/chatwoot
 ```
 
-### Add main.ts
+### Vue 3 Setup
+
+add Main.ts
+
 ```ts
 const chatwoot = createChatWoot({
   init: {
@@ -48,7 +51,7 @@ app.use(chatwoot)
 ```
 
 
-### Nuxt 3 Config
+### Nuxt 3 Setup
 
 ```ts
 export default defineNuxtConfig({
