@@ -1,0 +1,75 @@
+{
+  "name": "@productdevbook/chatwoot",
+  "type": "module",
+  "version": "0.1.0",
+  "description": "Chatwoot Vue or Nuxt library.",
+  "author": "Mehmet - productdevbook <hi@productdevbook.com>",
+  "license": "MIT",
+  "funding": "https://github.com/sponsors/productdevbook",
+  "homepage": "https://github.com/productdevbookcom/chatwoot",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/productdevbookcom/chatwoot.git",
+    "directory": "projects/chatwoot/packages/vue"
+  },
+  "bugs": {
+    "url": "https://github.com/productdevbookcom/chatwoot/issues"
+  },
+  "keywords": [
+    "vue 3",
+    "chatwoot",
+    "vue",
+    "plugin",
+    "nuxt 3",
+    "chatwoot",
+    "vue 3",
+    "nuxt 3 module",
+    "plugin"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs"
+    },
+    "./nuxt": {
+      "types": "./dist/module.d.ts",
+      "import": "./dist/module.mjs",
+      "require": "./dist/module.cjs"
+    }
+  },
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "pnpm dev:prepare && nuxi dev playground",
+    "build": "pnpm dev:prepare && pnpm nuxt-module-build",
+    "stub": "unbuild --stub",
+    "prepublishOnly": "npm run build",
+    "dev:build": "nuxi build playground",
+    "dev:prepare": "nuxt-module-build --stub && nuxi prepare playground"
+  },
+  "peerDependencies": {
+    "vue": "^3.2.47"
+  },
+  "dependencies": {
+    "defu": "^6.1.2",
+    "@nuxt/kit": "^3.3.1"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.36.0",
+    "eslint": "^8.36.0",
+    "@types/node": "^18.15.3",
+    "tsx": "^3.12.5",
+    "unbuild": "^1.1.2",
+    "unconfig": "^0.3.7",
+    "vue": "^3.2.47",
+    "@nuxt/module-builder": "^0.2.1",
+    "@nuxt/schema": "^3.3.1",
+    "nuxt": "^3.3.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
