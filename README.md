@@ -13,6 +13,7 @@
 This module productdevbook team created.
 
 > [ChatWoot](https://www.chatwoot.com/help-center) integration for [Vue](https://vuejs.org)
+> and [Nuxt](https://nuxtjs.org).
 
 ## Features
 
