@@ -11,6 +11,6 @@
     "nuxt": "^3.3.1"
   },
   "dependencies": {
-    "@productdevbook/chatwoot": "^0.1.2"
+    "@productdevbook/chatwoot": "^0.1.4"
   }
 }

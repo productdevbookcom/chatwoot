@@ -1,11 +1,11 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@productdevbook/chatwoot': ^0.1.2
+  '@productdevbook/chatwoot': ^0.1.4
   nuxt: ^3.3.1
 
 dependencies:
-  '@productdevbook/chatwoot': 0.1.2
+  '@productdevbook/chatwoot': 0.1.4
 
 devDependencies:
   nuxt: 3.3.1
@@ -1325,8 +1325,8 @@ packages:
     dev: true
     optional: true
 
-  /@productdevbook/chatwoot/0.1.2:
-    resolution: {integrity: sha512-QSPHP5lq3NTB2EaphaRo7nnpQLSAaejWs9pIzMgnCucauiAJbUHXFWxqCxA+I/G8dRLnzRsucMb+FWvPM351nA==}
+  /@productdevbook/chatwoot/0.1.4:
+    resolution: {integrity: sha512-N84NYUPVnFXHEhgj77Lv05s4AeiiVIja4SrDiIZYhHlY1O9o4mNUYgLsZ/xLrXYOJ/XewyS6qsfb0oj72aS3VQ==}
     peerDependencies:
       vue: ^3.2.47
     dependencies:
