@@ -32,13 +32,23 @@
       "import": "./dist/index.mjs"
     },
     "./nuxt": {
-      "types": "./dist/module.d.ts",
+      "types": "./dist/types.d.ts",
       "import": "./dist/module.mjs",
       "require": "./dist/module.cjs"
     }
   },
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
+  "main": "dist/index.mjs",
+  "types": "index.d.ts",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*"
+      ],
+      "nuxt": [
+        "./dist/types.d.ts"
+      ]
+    }
+  },
   "files": [
     "dist"
   ],
