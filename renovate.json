@@ -36,7 +36,7 @@
         },
         {
             "matchPaths": [
-                "demo"
+                "demo/**"
             ],
             "matchUpdateTypes": [
                 "patch",
