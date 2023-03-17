@@ -1,5 +1,9 @@
 lockfileVersion: 5.4
 
+overrides:
+  vite: ^4.0.4
+  vue: ^3.2.47
+
 specifiers:
   '@productdevbook/chatwoot': ^0.1.4
   nuxt: ^3.3.1
