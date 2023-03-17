@@ -35,8 +35,8 @@
             ]
         },
         {
-            "matchFiles": [
-                "demo/**/package.json"
+            "matchPaths": [
+                "demo"
             ],
             "matchUpdateTypes": [
                 "patch",
