@@ -14,7 +14,7 @@
     "@productdevbook/chatwoot": "^0.1.4"
   },
   "resolutions": {
-    "vite": "^4.0.4",
+    "vite": "^4.2.0",
     "vue": "^3.2.47"
   }
 }
