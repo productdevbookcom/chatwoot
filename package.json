@@ -72,14 +72,14 @@
     "defu": "^6.1.2"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.36.0",
+    "@antfu/eslint-config": "^0.37.0",
     "@nuxt/module-builder": "^0.2.1",
     "@nuxt/schema": "^3.3.1",
-    "@types/node": "^18.15.3",
+    "@types/node": "^18.15.5",
     "bumpp": "^9.0.0",
     "eslint": "^8.36.0",
     "nuxt": "^3.3.1",
-    "tsx": "^3.12.5",
+    "tsx": "^3.12.6",
     "typescript": "^5.0.2",
     "unbuild": "^1.1.2",
     "unconfig": "^0.3.7",
