@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@productdevbook/chatwoot': ^0.1.4
+  '@productdevbook/chatwoot': ^0.1.6
   '@vitejs/plugin-vue': ^4.1.0
   typescript: ^5.0.2
   vite: ^4.2.1
@@ -9,7 +9,7 @@ specifiers:
   vue-tsc: ^1.2.0
 
 dependencies:
-  '@productdevbook/chatwoot': 0.1.4_vue@3.2.47
+  '@productdevbook/chatwoot': 0.1.6_vue@3.2.47
   vue: 3.2.47
 
 devDependencies:
@@ -530,8 +530,8 @@ packages:
       - supports-color
     dev: false
 
-  /@productdevbook/chatwoot/0.1.4_vue@3.2.47:
-    resolution: {integrity: sha512-N84NYUPVnFXHEhgj77Lv05s4AeiiVIja4SrDiIZYhHlY1O9o4mNUYgLsZ/xLrXYOJ/XewyS6qsfb0oj72aS3VQ==}
+  /@productdevbook/chatwoot/0.1.6_vue@3.2.47:
+    resolution: {integrity: sha512-v0riQ9215Eqc2M/vXrvHbu2EPYoxUxrBh9BEy2BmqlSKY9LB3l6Td6MEU/hPl9T2X71iDXjP9B/VZXqYnMoX2Q==}
     peerDependencies:
       vue: ^3.2.47
     dependencies:
