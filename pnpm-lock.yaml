@@ -1,5 +1,8 @@
 lockfileVersion: 5.4
 
+overrides:
+  '@productdevbook/chatwoot': link:.
+
 specifiers:
   '@antfu/eslint-config': ^0.36.0
   '@nuxt/kit': ^3.3.1
