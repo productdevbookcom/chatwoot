@@ -31,9 +31,7 @@ yarn add @productdevbook/chatwoot
 npm add @productdevbook/chatwoot
 ```
 
-# Vue 3 Setup
-
-### Test your own
+## Vue 3 Setup
 
 - [▶️ &nbsp;Online playground](https://stackblitz.com/github/productdevbookcom/chatwoot/tree/main/demo/vue3)
 
@@ -55,10 +53,7 @@ const chatwoot = createChatWoot({
 app.use(chatwoot)
 ```
 
-
-# Nuxt 3 Setup
-
-### Deploy your own
+## Nuxt 3 Setup
 
 - [▶️ &nbsp;Online playground](https://stackblitz.com/github/productdevbookcom/chatwoot/tree/main/demo/nuxt3)
 
