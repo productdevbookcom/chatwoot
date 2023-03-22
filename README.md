@@ -33,11 +33,9 @@ npm add @productdevbook/chatwoot
 
 # Vue 3 Setup
 
-### Deploy your own
+### Test your own
 
-[![Deploy to Netlify Vue 3](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/productdevbookcom/demo/vue3)
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/productdevbookcom/demo/vue3)
+- [▶️ &nbsp;Online playground](https://stackblitz.com/github/productdevbookcom/chatwoot/tree/main/demo/vue3)
 
 add Main.ts
 
@@ -62,9 +60,8 @@ app.use(chatwoot)
 
 ### Deploy your own
 
-[![Deploy to Netlify Vue 3](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/productdevbookcom/demo/nuxt3)
+- [▶️ &nbsp;Online playground](https://stackblitz.com/github/productdevbookcom/chatwoot/tree/main/demo/nuxt3)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/productdevbookcom/demo/nuxt3)
 
 ```ts
 export default defineNuxtConfig({
