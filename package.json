@@ -28,18 +28,18 @@
   ],
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs"
-    },
-    "./nuxt": {
       "types": "./dist/types.d.ts",
       "import": "./dist/module.mjs",
       "require": "./dist/module.cjs"
     },
+    "./vue": {
+      "types": "./dist/runtime/vue/index.d.ts",
+      "import": "./dist/runtime/vue/index.mjs"
+    },
     "./*": "./*"
   },
-  "main": "dist/index.mjs",
-  "types": "./dist/index.d.ts",
+  "main": "./dist/module.cjs",
+  "types": "./dist/types.d.ts",
   "typesVersions": {
     "*": {
       "*": [

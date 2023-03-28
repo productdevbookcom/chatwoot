@@ -7,8 +7,8 @@ const externals = [
 ]
 
 export default defineBuildConfig({
-  entries: ['src/index', 'src/module'],
   clean: true,
   declaration: true,
   externals,
+  outDir: 'dist',
 })

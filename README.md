@@ -38,6 +38,7 @@ npm add @productdevbook/chatwoot
 add Main.ts
 
 ```ts
+import { createChatWoot } from '@productdevbook/chatwoot/vue'
 const chatwoot = createChatWoot({
   init: {
     websiteToken: 'b6BejyTTuxF4yPt61ZTZHjdB'
@@ -61,7 +62,7 @@ app.use(chatwoot)
 ```ts
 export default defineNuxtConfig({
   modules: [
-    '@productdevbook/chatwoot/nuxt'
+    '@productdevbook/chatwoot'
   ],
 
   chatwoot: {

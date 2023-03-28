@@ -1,4 +1,4 @@
-import { createChatWoot } from '../index'
+import { createChatWoot } from './vue'
 
 import { defineNuxtPlugin, useRuntimeConfig } from '#app'
 

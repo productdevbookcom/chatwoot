@@ -1,4 +1,4 @@
-import { createChatWoot } from '@productdevbook/chatwoot'
+import { createChatWoot } from '@productdevbook/chatwoot/vue'
 
 export default createChatWoot({
   init: {

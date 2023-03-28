@@ -1,10 +1,7 @@
-import { } from '@productdevbook/chatwoot/nuxt'
-
 export default defineNuxtConfig({
   modules: [
-    '@productdevbook/chatwoot/nuxt',
+    '@productdevbook/chatwoot',
   ],
-
   chatwoot: {
     init: {
       websiteToken: 'b6BejyTTuxF4yPt61ZTZHjdB',
