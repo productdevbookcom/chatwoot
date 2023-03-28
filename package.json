@@ -45,8 +45,8 @@
       "*": [
         "./dist/*"
       ],
-      "nuxt": [
-        "./dist/types.d.ts"
+      "vue": [
+        "./dist/runtime/vue/index.d.ts"
       ]
     }
   },

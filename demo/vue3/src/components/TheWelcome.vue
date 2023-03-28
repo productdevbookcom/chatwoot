@@ -1,5 +1,5 @@
 <script setup>
-import { useChatWoot } from '@productdevbook/chatwoot'
+import { useChatWoot } from '@productdevbook/chatwoot/vue'
 const { isModalVisible, toggle, toggleBubbleVisibility } = useChatWoot()
 </script>
 
