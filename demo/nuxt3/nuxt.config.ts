@@ -1,4 +1,5 @@
 export default defineNuxtConfig({
+  css: ['~/assets/main.css', '~/assets/style.css'],
   modules: [
     '@productdevbook/chatwoot',
   ],

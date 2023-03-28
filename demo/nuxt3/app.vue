@@ -1,19 +1,29 @@
 <template>
-  <header>
-    <div class="wrapper">
-      <Logo class="logo" />
-      <HelloWorld msg="Chatwoot + Vue.js" />
-    </div>
-  </header>
+  <div class="center">
+    <header>
+      <div class="wrapper">
+        <Logo class="logo" />
+        <HelloWorld msg="Chatwoot + Vue.js" />
+      </div>
+    </header>
 
-  <main>
-    <TheWelcome />
-  </main>
+    <main>
+      <TheWelcome />
+    </main>
+  </div>
 </template>
 
 <style scoped>
 header {
   line-height: 1.5;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
 }
 
 .logo {

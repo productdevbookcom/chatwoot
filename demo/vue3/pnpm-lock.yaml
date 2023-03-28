@@ -2,8 +2,8 @@ lockfileVersion: '6.0'
 
 dependencies:
   '@productdevbook/chatwoot':
-    specifier: ^0.2.0
-    version: 0.2.0(vue@3.2.47)
+    specifier: ^0.2.1
+    version: 0.2.1(vue@3.2.47)
   vue:
     specifier: ^3.2.47
     version: 3.2.47
@@ -534,8 +534,8 @@ packages:
       - supports-color
     dev: false
 
-  /@productdevbook/chatwoot@0.2.0(vue@3.2.47):
-    resolution: {integrity: sha512-U2YYHU6ZH8L+WYhUN/XAcF27IMAJWCZR0QzUUEZ/z1AxUhCCvymJCcMz401eAt47YP2/9YZyMJ4iOPT8uNxfWA==}
+  /@productdevbook/chatwoot@0.2.1(vue@3.2.47):
+    resolution: {integrity: sha512-lZyBp53toomCWaem1wyKyiMaqZhd9v6qUznyYI8Qdx1Sv+IYcCNsOZdGmjkL6u9y4Mhd6cIhee2sgy/6qbbxAg==}
     peerDependencies:
       vue: ^3.2.47
     dependencies:

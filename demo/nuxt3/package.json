@@ -11,7 +11,7 @@
     "nuxt": "^3.3.2"
   },
   "dependencies": {
-    "@productdevbook/chatwoot": "^0.2.0"
+    "@productdevbook/chatwoot": "^0.2.1"
   },
   "resolutions": {
     "vite": "^4.2.1",
