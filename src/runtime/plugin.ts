@@ -7,6 +7,7 @@ export default defineNuxtPlugin((nuxtApp) => {
   const _chatwoot = createChatWoot({
     init: chatwoot.init,
     partytown: chatwoot.partytown,
+    settings: chatwoot.settings,
   })
   nuxtApp.vueApp.use(_chatwoot)
   nuxtApp.provide('chatwoot', _chatwoot)
