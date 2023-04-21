@@ -3,16 +3,16 @@ const message = useMessage()
 const notification = useNotification()
 const dialog = useDialog()
 const loadingBar = useLoadingBar()
-const cb1 = () => {
+function cb1() {
   message.info('message')
 }
-const cb2 = () => {
+function cb2() {
   notification.info({ title: 'notification' })
 }
-const cb3 = () => {
+function cb3() {
   dialog.info({ title: 'dialog' })
 }
-const cb4 = () => {
+function cb4() {
   loadingBar.start()
   setTimeout(() => {
     loadingBar.finish()
