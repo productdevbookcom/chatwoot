@@ -14,10 +14,8 @@ export interface ScriptLoaderOption extends Partial<HTMLScriptElement> {
   partytown: boolean
 }
 
-export const loadScript = (
-  source: string,
-  options: ScriptLoaderOption = {} as ScriptLoaderOption,
-) => {
+export function loadScript(source: string,
+  options: ScriptLoaderOption = {} as ScriptLoaderOption) {
   return new Promise((resolve, reject) => {
     const head = document.head || document.getElementsByTagName('head')[0]
     const script = document.createElement('script')
@@ -188,7 +186,7 @@ export interface OptionPlugin {
   partytown?: boolean
 }
 
-export const createChatWoot = (options: OptionPlugin) => {
+export function createChatWoot(options: OptionPlugin) {
   const ChatWoot = {
     install(app: App): void {
       const chatwoot = defu(options, {
@@ -228,7 +226,7 @@ export const createChatWoot = (options: OptionPlugin) => {
   return ChatWoot
 }
 
-export const useChatWoot = () => {
+export function useChatWoot() {
   const observer = ref<any>(null)
   const start = ref(1)
   let timer: ReturnType<typeof setTimeout>
