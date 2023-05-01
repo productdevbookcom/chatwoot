@@ -22,13 +22,13 @@ This module productdevbook team created.
 
 ## Setup
 ```
-pnpm add @productdevbook/chatwoot
+pnpm install @productdevbook/chatwoot
 ```
 ```
-yarn add @productdevbook/chatwoot
+yarn install @productdevbook/chatwoot
 ```
 ```
-npm add @productdevbook/chatwoot
+npm install @productdevbook/chatwoot
 ```
 
 ## Vue 3 Setup
