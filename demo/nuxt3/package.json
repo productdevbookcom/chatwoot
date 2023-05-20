@@ -8,13 +8,13 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "nuxt": "^3.4.3"
+    "nuxt": "^3.5.0"
   },
   "dependencies": {
     "@productdevbook/chatwoot": "^1.1.0"
   },
   "resolutions": {
-    "vite": "^4.3.3",
-    "vue": "^3.2.47"
+    "vite": "^4.3.8",
+    "vue": "^3.3.4"
   }
 }
