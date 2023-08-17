@@ -5,6 +5,10 @@ on:
     tags:
       - 'v*'
 
+permissions:
+  pull-requests: write
+  contents: write
+
 jobs:
   release:
     runs-on: ubuntu-latest
@@ -19,4 +23,4 @@ jobs:
 
       - run: npx changelogithub
         env:
-          GITHUB_TOKEN: ${{secrets.REPOCHANGELOG_TOKEN}}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
