@@ -140,6 +140,15 @@ const { isModalVisible, toggle, toggleBubbleVisibility, popoutChatWindow } = use
 | toggleBubbleVisibility       | `'hide' or 'show' - Function`   | You can set the speech bubble's hide state.    |
 | popoutChatWindow       |  | You can open the conversation as a popup.  |
 
+## Sponsors
+
+<p align="center">
+  <a href="https://cdn.jsdelivr.net/gh/productdevbook/static/sponsors.svg">
+    <img alt="sponsors" src='https://cdn.jsdelivr.net/gh/productdevbook/static/sponsors.svg'/>
+  </a>
+</p>
+
+
 
 ## 💻 Development
 
