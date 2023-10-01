@@ -69,18 +69,18 @@
     "vue": "^3.3.4"
   },
   "dependencies": {
-    "@nuxt/kit": "^3.7.0",
+    "@nuxt/kit": "^3.7.4",
     "defu": "^6.1.2"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.41.0",
-    "@nuxt/module-builder": "^0.5.1",
-    "@nuxt/schema": "^3.7.0",
-    "@types/node": "^18.17.12",
+    "@antfu/eslint-config": "^0.43.1",
+    "@nuxt/module-builder": "^0.5.2",
+    "@nuxt/schema": "^3.7.4",
+    "@types/node": "^18.18.1",
     "bumpp": "^9.2.0",
-    "eslint": "^8.48.0",
-    "nuxt": "^3.7.0",
-    "tsx": "^3.12.7",
+    "eslint": "^8.50.0",
+    "nuxt": "^3.7.4",
+    "tsx": "^3.13.0",
     "typescript": "^5.2.2",
     "unbuild": "^2.0.0",
     "unconfig": "^0.3.10",
