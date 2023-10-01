@@ -1,0 +1,7 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`button > alert render 1`] = `"<div><button>Test button</button></div>"`;
+
+exports[`button > disabled 1`] = `"<div disabled=\\"true\\"><button>Test button</button></div>"`;
+
+exports[`button > loading 1`] = `"<div loading=\\"true\\"><button>Test button</button></div>"`;

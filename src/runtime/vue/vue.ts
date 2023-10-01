@@ -14,8 +14,7 @@ export interface ScriptLoaderOption extends Partial<HTMLScriptElement> {
   partytown: boolean
 }
 
-export function loadScript(source: string,
-  options: ScriptLoaderOption = {} as ScriptLoaderOption) {
+export function loadScript(source: string, options: ScriptLoaderOption = {} as ScriptLoaderOption) {
   return new Promise((resolve, reject) => {
     const head = document.head || document.getElementsByTagName('head')[0]
     const script = document.createElement('script')
