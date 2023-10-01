@@ -39,6 +39,7 @@ add Main.ts
 
 ```ts
 import { createChatWoot } from '@productdevbook/chatwoot/vue'
+
 const chatwoot = createChatWoot({
   init: {
     websiteToken: 'b6BejyTTuxF4yPt61ZTZHjdB'

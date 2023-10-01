@@ -1,4 +1,12 @@
-name: CI
+name: Main
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+  pull-requests: write
 
 on:
   push:
@@ -10,7 +18,8 @@ on:
       - main
 
 jobs:
-  build-lint:
+  build-test:
+    name: 📚 Main
     runs-on: ${{ matrix.os }}
 
     strategy:
@@ -25,12 +34,26 @@ jobs:
         with:
           node-version: '18'
           cache: pnpm
-            
+
       - name: 📦 Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: 🛠 Build
+      - name: 👀 Lint
+        run: pnpm lint
+
+      - name: 🚀 Build
         run: pnpm build
 
-      - name: 💪 Lint
-        run: pnpm lint
+      # - name: 🧪 Test
+      #   run: pnpm test
+      #   env:
+      #     VITE_TEST_DB_URL: ${{ secrets.VITE_TEST_DB_URL }}
+
+      - name: 🧪 Test with coverage
+        run: pnpm coverage
+        env:
+          VITE_TEST_DB_URL: ${{ secrets.VITE_TEST_DB_URL }}
+
+      - name: 📝 Upload coverage
+        if: always()
+        uses: davelosert/vitest-coverage-report-action@v2

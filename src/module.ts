@@ -35,7 +35,7 @@ export default defineNuxtModule<ModuleOptions>({
     const { resolve } = createResolver(import.meta.url)
 
     nuxt.options.runtimeConfig.public.chatwoot = defu(
-      nuxt.options.runtimeConfig.public.chatwoot,
+      options,
       {
         init: options.init,
         settings: options.settings,
