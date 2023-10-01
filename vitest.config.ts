@@ -3,9 +3,6 @@ import Vue from '@vitejs/plugin-vue'
 
 export default defineConfig({
   plugins: [Vue()],
-  optimizeDeps: {
-    disabled: true,
-  },
   test: {
     environment: 'happy-dom',
     coverage: {
