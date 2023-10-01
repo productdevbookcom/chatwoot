@@ -76,7 +76,7 @@ interface ChatwootInit {
  *
  * https://www.chatwoot.com/docs/product/channels/live-chat/sdk/setup/#sdk-settings
  *
- * */
+ */
 export interface ChatwootSettings {
   hideMessageBubble?: boolean
   position?: 'left' | 'right'
@@ -114,7 +114,7 @@ export interface ChatwootSdk {
  * https://github.com/chatwoot/chatwoot/blob/develop/app/javascript/packs/sdk.js#L21
  *
  *
- * */
+ */
 export interface Chatwoot {
   isModalVisible: boolean
   toggle: (state?: 'open' | 'close') => void
@@ -178,7 +178,8 @@ export interface OptionPlugin {
    */
   settings?: ChatwootSettings
 
-  /** Partytown support
+  /**
+   * Partytown support
    * @default false
    * @type boolean
    * @link https://partytown.builder.io/how-does-partytown-work
