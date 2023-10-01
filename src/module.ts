@@ -1,5 +1,4 @@
 import { join } from 'node:path'
-import process from 'node:process'
 import {
   addImportsDir,
   addPlugin,
@@ -26,7 +25,9 @@ export default defineNuxtModule<ModuleOptions>({
       baseUrl: /* In this code, `process` is a global object in Node.js that provides information and
       control over the current Node.js process. It allows you to access environment
       variables, command-line arguments, and other process-related information. */
+      // eslint-disable-next-line node/prefer-global/process
       process.env.CHATWOOT_URL || 'https://app.chatwoot.com',
+      // eslint-disable-next-line node/prefer-global/process
       websiteToken: process.env.CHATWOOT_TOKEN || '',
     },
     partytown: false,
