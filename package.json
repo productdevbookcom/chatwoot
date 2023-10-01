@@ -55,7 +55,7 @@
   ],
   "scripts": {
     "dev": "pnpm nuxi dev playground-nuxt",
-    "build": "pnpm dev:prepare && pnpm nuxt-module-build",
+    "build": "pnpm dev:prepare && pnpm nuxt-module-build build",
     "dev:build": "nuxi build playground-nuxt",
     "dev:prepare": "nuxt-module-build --stub && nuxi prepare playground-nuxt",
     "play": "pnpm --filter playground-nuxt dev",
