@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@productdevbook/chatwoot": "^1.3.0",
-    "vue": "^3.3.4"
+    "vue": "^3.4.21"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.3.4",
