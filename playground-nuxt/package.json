@@ -2,6 +2,6 @@
   "private": true,
   "dependencies": {
     "@productdevbook/chatwoot": "workspace:*",
-    "nuxt": "^3.7.4"
+    "nuxt": "^3.11.1"
   }
 }
