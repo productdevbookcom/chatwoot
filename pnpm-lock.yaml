@@ -78,6 +78,10 @@ importers:
       nuxt:
         specifier: ^3.11.1
         version: 3.11.1(@types/node@20.12.3)(@unocss/reset@0.58.9)(eslint@8.57.0)(floating-vue@5.2.2)(rollup@3.29.4)(typescript@5.4.3)(unocss@0.58.9)(vite@5.2.7)
+    devDependencies:
+      '@nuxtjs/partytown':
+        specifier: ^1.5.0
+        version: 1.5.0(rollup@3.29.4)
 
   playground-vue:
     dependencies:
@@ -541,6 +545,12 @@ packages:
 
   /@bcoe/v8-coverage@0.2.3:
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
+    dev: true
+
+  /@builder.io/partytown@0.10.1:
+    resolution: {integrity: sha512-HTyW2do++3JUFKTLBjTGwhUu4MTwBDq0dBlWaQm7tLaQk237tnHNkBZmquDXkZ6CkSv8aHiIH40Wm2/nxkjQsQ==}
+    engines: {node: '>=18.0.0'}
+    hasBin: true
     dev: true
 
   /@clack/core@0.3.4:
@@ -1586,6 +1596,19 @@ packages:
       - vls
       - vti
       - vue-tsc
+
+  /@nuxtjs/partytown@1.5.0(rollup@3.29.4):
+    resolution: {integrity: sha512-3qJXEXoHydCEEiHZCy4Q80kHTqKD0T9Ryj8kjh0bwTfNHGQ5auC7pqJxy6+CFOqfZZRcGalqGb0MhhRc8GdTdw==}
+    dependencies:
+      '@builder.io/partytown': 0.10.1
+      '@nuxt/kit': 3.11.1(rollup@3.29.4)
+      knitwork: 1.1.0
+      serve-static: 1.15.0
+      ufo: 1.5.3
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
+    dev: true
 
   /@one-ini/wasm@0.1.1:
     resolution: {integrity: sha512-XuySG1E38YScSJoMlqovLru4KTUNSjgVTIjyh7qMX6aNN5HY5Ct5LhRJdxO79JtTzKfzV/bnWpz+zquYrISsvw==}

@@ -1,5 +1,8 @@
 export default defineNuxtConfig({
-  modules: ['../src/module.ts'],
+  modules: [
+    '../src/module.ts',
+    '@nuxtjs/partytown',
+  ],
   chatwoot: {
     init: {
       websiteToken: 'b6BejyTTuxF4yPt61ZTZHjdB',
@@ -9,6 +12,10 @@ export default defineNuxtConfig({
       position: 'left',
       launcherTitle: 'Hello Chat',
     },
+    partytown: false,
+  },
+  partytown: {
+    debug: true,
   },
   typescript: {
     tsConfig: {

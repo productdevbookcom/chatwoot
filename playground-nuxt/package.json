@@ -3,5 +3,8 @@
   "dependencies": {
     "@productdevbook/chatwoot": "link:..",
     "nuxt": "^3.11.1"
+  },
+  "devDependencies": {
+    "@nuxtjs/partytown": "^1.5.0"
   }
 }
