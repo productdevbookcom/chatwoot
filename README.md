@@ -22,13 +22,13 @@ This module productdevbook team created.
 
 ## Setup
 ```
-pnpm install @productdevbook/chatwoot
+npx nuxi@latest module add chatwoot
 ```
 ```
-yarn install @productdevbook/chatwoot
+npx nuxi@latest module add chatwoot
 ```
 ```
-npm install @productdevbook/chatwoot
+npx nuxi@latest module add chatwoot
 ```
 
 ## Vue 3 Setup
