@@ -24,12 +24,6 @@ This module productdevbook team created.
 ```
 npx nuxi@latest module add chatwoot
 ```
-```
-npx nuxi@latest module add chatwoot
-```
-```
-npx nuxi@latest module add chatwoot
-```
 
 ## Vue 3 Setup
 
