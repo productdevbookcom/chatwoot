@@ -22,7 +22,6 @@
       "matchDepTypes": [
         "devDependencies",
         "dependencies",
-        "peerDependencies",
         "packageManager"
       ],
       "automerge": true,
@@ -45,7 +44,6 @@
       "matchDepTypes": [
         "devDependencies",
         "dependencies",
-        "peerDependencies",
         "packageManager"
       ],
       "automerge": true,
@@ -65,7 +63,6 @@
       "matchDepTypes": [
         "devDependencies",
         "dependencies",
-        "peerDependencies",
         "packageManager"
       ],
       "automerge": true,
@@ -82,7 +79,6 @@
       "matchDepTypes": [
         "devDependencies",
         "dependencies",
-        "peerDependencies",
         "packageManager"
       ],
       "matchUpdateTypes": [
