@@ -72,27 +72,27 @@
     "vue": ">=3.3.0"
   },
   "dependencies": {
-    "@nuxt/kit": "^3.7.4",
-    "defu": "^6.1.2"
+    "@nuxt/kit": "^3.11.1",
+    "defu": "^6.1.4"
   },
   "devDependencies": {
     "@antfu/eslint-config": "1.0.0-beta.18",
-    "@nuxt/module-builder": "^0.5.2",
-    "@nuxt/schema": "^3.7.4",
-    "@nuxt/test-utils": "^3.7.4",
-    "@types/node": "^20.8.0",
+    "@nuxt/module-builder": "^0.5.5",
+    "@nuxt/schema": "^3.11.1",
+    "@nuxt/test-utils": "^3.12.0",
+    "@types/node": "^20.12.3",
     "@vitest/coverage-v8": "^0.34.6",
-    "@vue/test-utils": "^2.4.1",
-    "bumpp": "^9.2.0",
-    "eslint": "^8.50.0",
-    "happy-dom": "^12.4.0",
-    "nuxt": "^3.7.4",
-    "tsx": "^3.13.0",
-    "typescript": "^5.2.2",
+    "@vue/test-utils": "^2.4.5",
+    "bumpp": "^9.4.0",
+    "eslint": "^8.57.0",
+    "happy-dom": "^12.10.3",
+    "nuxt": "^3.11.1",
+    "tsx": "^3.14.0",
+    "typescript": "^5.4.3",
     "unbuild": "^2.0.0",
-    "unconfig": "^0.3.10",
+    "unconfig": "^0.3.12",
     "vitest": "^0.34.6",
-    "vue": "^3.3.4"
+    "vue": "^3.4.21"
   },
   "resolutions": {
     "@productdevbook/chatwoot": "link:."
