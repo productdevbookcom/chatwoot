@@ -9,8 +9,8 @@ importers:
   nuxt3:
     dependencies:
       '@productdevbook/chatwoot':
-        specifier: ^1.4.0
-        version: 1.4.0(vue@3.4.21)
+        specifier: ^1.5.0
+        version: 1.5.0(vue@3.4.21)
     devDependencies:
       nuxt:
         specifier: ^3.11.1
@@ -19,8 +19,8 @@ importers:
   vue3:
     dependencies:
       '@productdevbook/chatwoot':
-        specifier: ^1.4.0
-        version: 1.4.0(vue@3.4.21)
+        specifier: ^1.5.0
+        version: 1.5.0(vue@3.4.21)
       vue:
         specifier: ^3.4.21
         version: 3.4.21(typescript@5.4.3)
@@ -1252,8 +1252,8 @@ packages:
     resolution: {integrity: sha512-j7P6Rgr3mmtdkeDGTe0E/aYyWEWVtc5yFXtHCRHs28/jptDEWfaVOc5T7cblqy1XKPPfCxJc/8DwQ5YgLOZOVQ==}
     dev: true
 
-  /@productdevbook/chatwoot@1.4.0(vue@3.4.21):
-    resolution: {integrity: sha512-Qy3ltBG4aADLQYuIqIu/kPaUfJPCy51RB1xQR+Ai+aKhDbPMuTMn+f3nOZKh7h7PorVoz9fpTJhSCDvVjsDo/A==}
+  /@productdevbook/chatwoot@1.5.0(vue@3.4.21):
+    resolution: {integrity: sha512-c+7NCuGU3bmte3JZX2u+dMTS7FjHt22MF4ZvmEsWjdMxXiagAvlbxbWVQp96PgpuHwlRXvyr3cOpyIaoQ4odCw==}
     peerDependencies:
       vue: '>=3.3.0'
     dependencies:

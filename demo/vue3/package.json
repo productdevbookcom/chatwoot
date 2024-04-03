@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@productdevbook/chatwoot": "^1.4.0",
+    "@productdevbook/chatwoot": "^1.5.0",
     "vue": "^3.4.21"
   },
   "devDependencies": {
