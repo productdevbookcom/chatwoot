@@ -3,41 +3,89 @@
   "extends": [
     "config:base"
   ],
-  "rebaseWhen": "conflicted",
-  "schedule": [
-    "every 8 months on the first day of the month"
-  ],
   "baseBranches": [
     "main"
   ],
-  "rangeStrategy": "bump",
   "ignoreDeps": [
     "node",
     "pnpm"
   ],
+  "rebaseWhen": "auto",
+  "rangeStrategy": "bump",
   "packageRules": [
     {
-      "enabled": false,
+      "groupName": "all digest updates",
+      "groupSlug": "all-digest",
+      "matchPackagePatterns": [
+        "*"
+      ],
       "matchDepTypes": [
-        "peerDependencies"
+        "devDependencies",
+        "dependencies",
+        "packageManager"
+      ],
+      "automerge": true,
+      "matchUpdateTypes": [
+        "digest"
+      ],
+      "schedule": [
+        "every 1 month"
       ]
     },
     {
-      "matchFiles": [
-        "package.json"
+      "groupName": "all patch updates",
+      "groupSlug": "all-patch",
+      "matchPackagePatterns": [
+        "*"
       ],
       "matchUpdateTypes": [
-        "patch",
-        "minor",
+        "patch"
+      ],
+      "matchDepTypes": [
+        "devDependencies",
+        "dependencies",
+        "packageManager"
+      ],
+      "automerge": true,
+      "schedule": [
+        "every 1 month"
+      ]
+    },
+    {
+      "groupName": "all minor updates",
+      "groupSlug": "all-minor",
+      "matchPackagePatterns": [
+        "*"
+      ],
+      "matchUpdateTypes": [
+        "minor"
+      ],
+      "matchDepTypes": [
+        "devDependencies",
+        "dependencies",
+        "packageManager"
+      ],
+      "automerge": true,
+      "schedule": [
+        "every 1 month"
+      ]
+    },
+    {
+      "groupName": "all major updates",
+      "groupSlug": "all-major",
+      "matchPackagePatterns": [
+        "*"
+      ],
+      "matchDepTypes": [
+        "devDependencies",
+        "dependencies",
+        "packageManager"
+      ],
+      "matchUpdateTypes": [
         "major"
       ],
-      "groupName": "root",
-      "groupSlug": "shared-root",
-      "labels": [
-        "dependencies"
-      ],
-      "addLabels": [
-        "dependencies"
+      "schedule": [
+        "every 1 month"
       ]
     }
   ]

@@ -9,7 +9,6 @@
       <img src="https://img.shields.io/github/stars/productdevbookcom/chatwoot.svg?style=social&label=Star&maxAge=2592000" alt="Github Stars"> </a>
 </p>
 
-
 This module productdevbook team created.
 
 > [ChatWoot](https://www.chatwoot.com/help-center) integration for [Vue](https://vuejs.org)
@@ -58,7 +57,6 @@ app.use(chatwoot)
 ## Nuxt 3 Setup
 
 - [▶️ &nbsp;Online playground](https://stackblitz.com/github/productdevbookcom/chatwoot/tree/main/demo/nuxt3)
-
 
 ```ts
 export default defineNuxtConfig({
@@ -114,14 +112,12 @@ const { isModalVisible, toggle, toggleBubbleVisibility, popoutChatWindow } = use
 </template>
 ```
 
-
 ## Init Default
 
 | Option         | Type     | Description                                                       | Default                  |
 | -------------- | -------- | ----------------------------------------------------------------- | ------------------------ |
 | websiteToken         | `string` | The token given to you when you create a chat widget. |    |
 | baseUrl       | `bool`   | Your site's domain, as declared by you in Chatwoot's settings | `https://app.chatwoot.com`    |
-
 
 ## useChatWoot
 
@@ -148,8 +144,6 @@ const { isModalVisible, toggle, toggleBubbleVisibility, popoutChatWindow } = use
     <img alt="sponsors" src='https://cdn.jsdelivr.net/gh/productdevbook/static/sponsors.svg'/>
   </a>
 </p>
-
-
 
 ## 💻 Development
 
