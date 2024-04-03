@@ -8,7 +8,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@productdevbook/chatwoot": "^1.4.0"
+    "@productdevbook/chatwoot": "^1.5.0"
   },
   "devDependencies": {
     "nuxt": "^3.11.1"
