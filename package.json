@@ -1,7 +1,7 @@
 {
   "name": "@productdevbook/chatwoot",
   "type": "module",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "packageManager": "pnpm@8.15.3",
   "description": "Chatwoot Vue or Nuxt library.",
   "author": "Mehmet - productdevbook <hi@productdevbook.com>",
