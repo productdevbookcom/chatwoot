@@ -81,7 +81,7 @@
     "@nuxt/schema": "^3.11.2",
     "@nuxt/test-utils": "^3.12.1",
     "@types/node": "^20.12.8",
-    "@vitest/coverage-v8": "^1.5.3",
+    "@vitest/coverage-v8": "^1.6.0",
     "@vue/test-utils": "^2.4.5",
     "bumpp": "^9.4.1",
     "eslint": "^8.57.0",
@@ -91,7 +91,7 @@
     "typescript": "^5.4.5",
     "unbuild": "^2.0.0",
     "unconfig": "^0.3.13",
-    "vitest": "^1.5.3",
+    "vitest": "^1.6.0",
     "vue": "^3.4.26"
   },
   "resolutions": {
