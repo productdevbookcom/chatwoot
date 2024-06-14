@@ -17,7 +17,7 @@ export default defineNuxtModule<ModuleOptions>({
     version,
     configKey: 'chatwoot',
     compatibility: {
-      nuxt: '^3.3.1',
+      nuxt: '>=3.3.1',
     },
   },
   defaults: {
