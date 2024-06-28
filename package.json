@@ -69,7 +69,7 @@
     "coverage": "vitest run --coverage"
   },
   "peerDependencies": {
-    "vue": ">=3.3.0"
+    "vue": ">=3.4.31"
   },
   "dependencies": {
     "@nuxt/kit": "^3.11.2",
