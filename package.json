@@ -77,7 +77,7 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "2.18.1",
-    "@nuxt/module-builder": "^0.6.0",
+    "@nuxt/module-builder": "^0.8.3",
     "@nuxt/schema": "^3.11.2",
     "@nuxt/test-utils": "^3.13.1",
     "@types/node": "^20.12.13",
