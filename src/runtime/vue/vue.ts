@@ -364,7 +364,7 @@ function isLoadTimer() {
   })
 }
 
-declare module '@vue/runtime-core' {
+declare module 'vue' {
   interface ComponentCustomProperties {
     $chatwoot: OptionPlugin
   }
