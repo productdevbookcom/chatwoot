@@ -1,5 +1,5 @@
-import { createApp } from 'vue'
 import { createChatWoot } from '@productdevbook/chatwoot/vue'
+import { createApp } from 'vue'
 import App from './App.vue'
 import './assets/main.css'
 

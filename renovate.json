@@ -29,7 +29,7 @@
         "digest"
       ],
       "schedule": [
-        "every 1 month"
+        "every 6 month"
       ]
     },
     {
@@ -48,7 +48,7 @@
       ],
       "automerge": true,
       "schedule": [
-        "every 1 month"
+        "every 6 month"
       ]
     },
     {
@@ -67,7 +67,7 @@
       ],
       "automerge": true,
       "schedule": [
-        "every 1 month"
+        "every 6 month"
       ]
     },
     {
@@ -85,7 +85,7 @@
         "major"
       ],
       "schedule": [
-        "every 1 month"
+        "every 6 month"
       ]
     }
   ]

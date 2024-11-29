@@ -1,3 +1,4 @@
+import type { OptionPlugin } from './runtime/vue'
 import { join } from 'node:path'
 import {
   addImportsDir,
@@ -7,7 +8,6 @@ import {
 } from '@nuxt/kit'
 import defu from 'defu'
 import { name, version } from '../package.json'
-import type { OptionPlugin } from './runtime/vue'
 
 export interface ModuleOptions extends OptionPlugin {}
 

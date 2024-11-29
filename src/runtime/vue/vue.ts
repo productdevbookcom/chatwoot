@@ -1,5 +1,5 @@
-import defu from 'defu'
 import type { App } from 'vue'
+import defu from 'defu'
 import { onBeforeUnmount, onMounted, ref } from 'vue'
 
 declare global {
@@ -251,7 +251,9 @@ export function useChatWoot() {
       observer.value = new MutationObserver(callback)
       observer.value.observe(data, { attributes: true })
     }
-    catch (e) {}
+    catch (e) {
+      console.error(e)
+    }
   }
 
   onMounted(() => {

@@ -1,6 +1,6 @@
-import { createChatWoot } from './vue'
-
 import { defineNuxtPlugin, useRuntimeConfig } from '#app'
+
+import { createChatWoot } from './vue'
 
 export default defineNuxtPlugin((nuxtApp) => {
   const { chatwoot } = useRuntimeConfig().public

@@ -1,8 +1,8 @@
-export { useChatWoot, createChatWoot } from './vue'
+export { createChatWoot, useChatWoot } from './vue'
 export type {
-  OptionPlugin,
-  ChatwootSettings,
-  ChatwootSetUserProps,
   Chatwoot,
   ChatwootSdk,
+  ChatwootSettings,
+  ChatwootSetUserProps,
+  OptionPlugin,
 } from './vue'
