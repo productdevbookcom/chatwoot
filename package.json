@@ -34,7 +34,7 @@
     },
     "./vue": {
       "types": "./dist/runtime/vue/index.d.ts",
-      "import": "./dist/runtime/vue/index.mjs"
+      "import": "./dist/runtime/vue/index.js"
     },
     "./*": "./*"
   },
