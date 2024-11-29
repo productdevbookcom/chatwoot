@@ -2,7 +2,7 @@
   "name": "@productdevbook/chatwoot",
   "type": "module",
   "version": "1.6.0",
-  "packageManager": "pnpm@8.15.3",
+  "packageManager": "pnpm@9.12.2",
   "description": "Chatwoot Vue or Nuxt library.",
   "author": "Mehmet - productdevbook <hi@productdevbook.com>",
   "license": "MIT",
@@ -34,7 +34,7 @@
     },
     "./vue": {
       "types": "./dist/runtime/vue/index.d.ts",
-      "import": "./dist/runtime/vue/index.mjs"
+      "import": "./dist/runtime/vue/index.js"
     },
     "./*": "./*"
   },
@@ -57,7 +57,7 @@
     "dev": "pnpm nuxi dev playground-nuxt",
     "build": "pnpm dev:prepare && pnpm nuxt-module-build build",
     "dev:build": "nuxi build playground-nuxt",
-    "dev:prepare": "nuxt-module-build --stub && nuxi prepare playground-nuxt",
+    "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare playground-nuxt",
     "play": "pnpm --filter playground-nuxt dev",
     "play:vue": "pnpm --filter playground-vue dev",
     "prepublishOnly": "pnpm run build",
@@ -72,27 +72,27 @@
     "vue": ">=3.3.0"
   },
   "dependencies": {
-    "@nuxt/kit": "^3.11.2",
+    "@nuxt/kit": "^3.14.1592",
     "defu": "^6.1.4"
   },
   "devDependencies": {
     "@antfu/eslint-config": "2.18.1",
-    "@nuxt/module-builder": "^0.6.0",
-    "@nuxt/schema": "^3.11.2",
-    "@nuxt/test-utils": "^3.13.1",
-    "@types/node": "^20.12.13",
+    "@nuxt/module-builder": "^0.8.4",
+    "@nuxt/schema": "^3.14.1592",
+    "@nuxt/test-utils": "^3.14.4",
+    "@types/node": "^20.17.9",
     "@vitest/coverage-v8": "^1.6.0",
     "@vue/test-utils": "^2.4.6",
-    "bumpp": "^9.4.2",
+    "bumpp": "^9.8.1",
     "eslint": "^8.57.1",
-    "happy-dom": "^14.11.4",
-    "nuxt": "^3.12.4",
-    "tsx": "^4.10.5",
-    "typescript": "^5.4.5",
+    "happy-dom": "^14.12.3",
+    "nuxt": "^3.14.1592",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
     "unbuild": "^2.0.0",
     "unconfig": "^0.4.5",
     "vitest": "^1.6.0",
-    "vue": "^3.4.38"
+    "vue": "^3.5.13"
   },
   "resolutions": {
     "@productdevbook/chatwoot": "link:."
