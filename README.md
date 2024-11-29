@@ -129,6 +129,7 @@ const { isModalVisible, toggle, toggleBubbleVisibility, popoutChatWindow } = use
 | toggle       | `'open' or 'close' - Function `   |   You can open and close the chat   |
 | setUser       | `key: string, args: ChatwootSetUserProps - Function`   | You can send user information to chatwoot panel.     |
 | setCustomAttributes       | `attributes: { [key: string]: string } - Function`   | You can send custom attributes to chatwoot panel.   |
+| setConversationCustomAttributes       | `attributes: { [key: string]: string } - Function`   | You can send conversation custom attributes to chatwoot panel.   |
 | deleteCustomAttribute       | `key: string - Function`   | You can delete custom attributes to chatwoot panel.   |
 | setLocale       | `local: string - Function`   |  Change widget locale  |
 | setLabel       | `label: string - Function`   |  You can send label to chatwoot panel.        |

@@ -1,7 +1,7 @@
 {
   "name": "@productdevbook/chatwoot",
   "type": "module",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "packageManager": "pnpm@8.15.3",
   "description": "Chatwoot Vue or Nuxt library.",
   "author": "Mehmet - productdevbook <hi@productdevbook.com>",
@@ -84,7 +84,7 @@
     "@vitest/coverage-v8": "^1.6.0",
     "@vue/test-utils": "^2.4.6",
     "bumpp": "^9.4.2",
-    "eslint": "^8.57.0",
+    "eslint": "^8.57.1",
     "happy-dom": "^14.11.4",
     "nuxt": "^3.12.4",
     "tsx": "^4.10.5",

@@ -119,6 +119,7 @@ export interface Chatwoot {
   toggle: (state?: 'open' | 'close') => void
   setUser: (key: string, args: ChatwootSetUserProps) => void
   setCustomAttributes: (attributes: { [key: string]: string }) => void
+  setConversationCustomAttributes: (attributes: { [key: string]: string }) => void
   deleteCustomAttribute: (key: string) => void
   setLocale: (local: string) => void
   setLabel: (label: string) => void
@@ -286,6 +287,12 @@ export function useChatWoot() {
     isLoadTimer().then(() => window.$chatwoot.setCustomAttributes(attributes))
   }
 
+  const setConversationCustomAttributes = (
+    attributes: Parameters<Chatwoot['setConversationCustomAttributes']>[0],
+  ) => {
+    isLoadTimer().then(() => window.$chatwoot.setConversationCustomAttributes(attributes))
+  }
+
   const deleteCustomAttribute = (
     attributes: Parameters<Chatwoot['deleteCustomAttribute']>[0],
   ) => {
@@ -327,6 +334,7 @@ export function useChatWoot() {
     toggle,
     setUser,
     setCustomAttributes,
+    setConversationCustomAttributes,
     deleteCustomAttribute,
     setLocale,
     setLabel,
@@ -364,7 +372,7 @@ function isLoadTimer() {
   })
 }
 
-declare module '@vue/runtime-core' {
+declare module 'vue' {
   interface ComponentCustomProperties {
     $chatwoot: OptionPlugin
   }
