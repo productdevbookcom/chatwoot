@@ -80,8 +80,8 @@
     "@nuxt/module-builder": "^0.8.4",
     "@nuxt/schema": "^3.14.1592",
     "@nuxt/test-utils": "^3.14.4",
-    "@types/node": "^22.10.1",
-    "@vitest/coverage-v8": "^2.1.6",
+    "@types/node": "^22.10.3",
+    "@vitest/coverage-v8": "^2.1.8",
     "@vue/test-utils": "^2.4.6",
     "bumpp": "^9.8.1",
     "eslint": "^9.15.0",
@@ -91,7 +91,7 @@
     "typescript": "^5.7.2",
     "unbuild": "^2.0.0",
     "unconfig": "^0.6.0",
-    "vitest": "^2.1.6",
+    "vitest": "^2.1.8",
     "vue": "^3.5.13"
   },
   "resolutions": {
