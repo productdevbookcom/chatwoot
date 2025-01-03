@@ -85,11 +85,11 @@
     "@vue/test-utils": "^2.4.6",
     "bumpp": "^9.9.2",
     "eslint": "^9.17.0",
-    "happy-dom": "^15.11.7",
+    "happy-dom": "^16.3.0",
     "nuxt": "^3.15.0",
     "tsx": "^4.19.2",
     "typescript": "^5.7.2",
-    "unbuild": "^2.0.0",
+    "unbuild": "^3.2.0",
     "unconfig": "^0.6.0",
     "vitest": "^2.1.8",
     "vue": "^3.5.13"
