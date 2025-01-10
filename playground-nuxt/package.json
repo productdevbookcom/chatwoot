@@ -5,6 +5,6 @@
     "nuxt": "^3.15.1"
   },
   "devDependencies": {
-    "@nuxtjs/partytown": "^1.5.0"
+    "@nuxtjs/partytown": "^1.6.0"
   }
 }
