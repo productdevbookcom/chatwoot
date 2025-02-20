@@ -1,6 +1,6 @@
 import type { App } from 'vue'
 import defu from 'defu'
-import { onBeforeUnmount, onMounted, ref } from 'vue'
+import { onBeforeUnmount, onMounted, ref, watch } from 'vue'
 
 declare global {
   interface Window {
@@ -229,8 +229,7 @@ export function createChatWoot(options: OptionPlugin) {
 
 export function useChatWoot() {
   const observer = ref<any>(null)
-  const start = ref(1)
-  let timer: ReturnType<typeof setTimeout>
+  const isReady = ref(false)
   const isModalVisible = ref(false)
 
   function observerStart(data: any) {
@@ -256,79 +255,94 @@ export function useChatWoot() {
     }
   }
 
+  function onReady() {
+    const data = document.querySelector('.woot-widget-holder')
+    isReady.value = true
+    observerStart(data)
+  }
+
+  function waitForReady(callback: () => void) {
+    if (isReady.value) {
+      callback()
+    }
+    else {
+      const stop = watch(isReady, (value) => {
+        if (!value)
+          return
+        callback()
+        stop()
+      })
+    }
+  }
+
   onMounted(() => {
-    timer = setInterval(() => {
-      start.value += 1
-      const data = document.querySelector('.woot-widget-holder')
-      if (data || start.value > 100) {
-        clearInterval(timer)
-        observerStart(data)
-      }
-    }, 100)
+    window.addEventListener('chatwoot:ready', onReady, { once: true })
   })
 
   onBeforeUnmount(() => {
+    window.removeEventListener('chatwoot:ready', onReady)
+
     if (observer.value)
       observer.value.disconnect()
   })
 
   const toggle = (state: Parameters<Chatwoot['toggle']>[0]) => {
-    isLoadTimer().then(() => window.$chatwoot.toggle(state))
+    waitForReady(() => window.$chatwoot.toggle(state))
   }
 
   const setUser = (
     key: Parameters<Chatwoot['setUser']>[0],
     args: Parameters<Chatwoot['setUser']>[1],
   ) => {
-    isLoadTimer().then(() => window.$chatwoot.setUser(key, args))
+    waitForReady(() => window.$chatwoot.setUser(key, args))
   }
 
   const setCustomAttributes = (
     attributes: Parameters<Chatwoot['setCustomAttributes']>[0],
   ) => {
-    isLoadTimer().then(() => window.$chatwoot.setCustomAttributes(attributes))
+    waitForReady(() => window.$chatwoot.setCustomAttributes(attributes))
   }
 
   const setConversationCustomAttributes = (
     attributes: Parameters<Chatwoot['setConversationCustomAttributes']>[0],
   ) => {
-    isLoadTimer().then(() => window.$chatwoot.setConversationCustomAttributes(attributes))
+    waitForReady(() => window.$chatwoot.setConversationCustomAttributes(attributes))
   }
 
   const deleteCustomAttribute = (
     attributes: Parameters<Chatwoot['deleteCustomAttribute']>[0],
   ) => {
-    isLoadTimer().then(() =>
+    waitForReady(() =>
       window.$chatwoot.deleteCustomAttribute(attributes),
     )
   }
 
   const setLocale = (local: Parameters<Chatwoot['setLocale']>[0]) => {
-    isLoadTimer().then(() => window.$chatwoot.setLocale(local))
+    waitForReady(() => window.$chatwoot.setLocale(local))
   }
 
   const setLabel = (label: Parameters<Chatwoot['setLabel']>[0]) => {
-    isLoadTimer().then(() => window.$chatwoot.setLabel(label))
+    waitForReady(() => window.$chatwoot.setLabel(label))
   }
 
   const removeLabel = (label: Parameters<Chatwoot['removeLabel']>[0]) => {
-    isLoadTimer().then(() => window.$chatwoot.removeLabel(label))
+    waitForReady(() => window.$chatwoot.removeLabel(label))
   }
 
   const reset = () => {
-    isLoadTimer().then(() => window.$chatwoot.reset())
+    waitForReady(() => window.$chatwoot.reset())
   }
 
   const toggleBubbleVisibility = (
     visibility: Parameters<Chatwoot['toggleBubbleVisibility']>[0],
   ) => {
-    isLoadTimer().then(() => {
+    waitForReady(() => {
       window.$chatwoot.toggleBubbleVisibility(visibility)
     })
   }
 
   const popoutChatWindow = () => {
-    isLoadTimer().then(() => window.$chatwoot.popoutChatWindow())
+    waitForReady(() => window.$chatwoot.popoutChatWindow())
   }
 
   return {
