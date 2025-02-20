@@ -361,33 +361,6 @@ export function useChatWoot() {
   }
 }
 
-function isLoadTimer() {
-  return new Promise((resolve, reject) => {
-    let loadNumber = 0
-    const timer = setInterval(() => {
-      const data = document.querySelector('.woot-widget-holder')
-      const widgetElm = document.querySelector('.woot--bubble-holder')
-
-      loadNumber += 1
-
-      if (
-        data
-        && window.chatwootSDK
-        && widgetElm
-        && window.$chatwoot
-        && window
-      ) {
-        clearInterval(timer)
-        resolve('Chatwoot loaded')
-      }
-      else if (loadNumber === 200) {
-        clearInterval(timer)
-        reject(new Error('Chatwoot not loaded'))
-      }
-    }, 150)
-  })
-}
-
 declare module 'vue' {
   interface ComponentCustomProperties {
     $chatwoot: OptionPlugin
