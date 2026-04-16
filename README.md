@@ -1,4 +1,22 @@
 # Chatwoot Vue 3 && Nuxt 3
+
+> [!WARNING]
+> **This project is no longer maintained.**
+>
+> `@productdevbook/chatwoot` is discontinued. Please migrate to
+> [**ahize**](https://github.com/productdevbook/ahize) — a zero-dependency,
+> tree-shakeable, SSR-safe TypeScript wrapper that unifies 18 live-chat
+> providers (including Chatwoot) behind a single API, with first-class
+> Vue and Nuxt adapters.
+>
+> - Chatwoot adapter: [`ahize/chatwoot`](https://github.com/productdevbook/ahize/blob/main/src/providers/chatwoot.ts)
+> - Vue: [`ahize/vue`](https://github.com/productdevbook/ahize/blob/main/src/adapters/vue.ts)
+> - Nuxt: [`ahize/nuxt`](https://github.com/productdevbook/ahize/blob/main/src/adapters/nuxt.ts)
+>
+> Existing versions on npm will remain available but are frozen. No
+> further releases, fixes, or issue responses are planned. Feel free to
+> fork if you want to continue the work.
+
 <p>
       <a href="https://www.npmjs.com/package/@productdevbook/chatwoot"><img src="https://img.shields.io/npm/v/@productdevbook/chatwoot.svg?style=flat&colorA=002438&colorB=28CF8D" alt="Version"></a>
       <a href="https://www.npmjs.com/package/@productdevbook/chatwoot"><img src="https://img.shields.io/npm/dm/@productdevbook/chatwoot.svg?style=flat&colorA=002438&colorB=28CF8D" alt="Downloads"></a>
