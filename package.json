@@ -85,7 +85,7 @@
     "@vue/test-utils": "^2.4.6",
     "bumpp": "^10.0.3",
     "eslint": "^9.20.1",
-    "happy-dom": "^17.1.1",
+    "happy-dom": "^20.0.0",
     "nuxt": "^3.15.4",
     "tsx": "^4.19.3",
     "typescript": "^5.7.3",
